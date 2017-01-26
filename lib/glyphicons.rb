@@ -1,5 +1,5 @@
 require "glyphicons/version"
 
 module Glyphicons
-  # Your code goes here...
+   class Engine < ::Rails::Engine; end
 end
