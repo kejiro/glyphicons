@@ -22,15 +22,15 @@ Or install it yourself as:
 
 Add asset path for fonts in `config/application.rb`:
 ```ruby
-    # fonts  
-    config.assets.paths << Rails.root.join("app", "assets", "fonts")
-    config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+# fonts  
+config.assets.paths << Rails.root.join("app", "assets", "fonts")
+config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
 ```
 
 
 Import Bootstrap styles in `app/assets/stylesheets/application.scss`:
 ```scss
- @import 'glyphicons';
+@import 'glyphicons';
 ```
 Icon examples for html
 ```html
