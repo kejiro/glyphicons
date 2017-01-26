@@ -19,6 +19,15 @@ Or install it yourself as:
     $ gem install glyphicons
 
 ## Usage
+
+Add asset path for fonts in `config/application.rb`:
+```ruby
+    # fonts  
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+```
+
+
 Import Bootstrap styles in `app/assets/stylesheets/application.scss`:
 ```scss
  @import 'glyphicons';
